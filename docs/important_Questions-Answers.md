@@ -8,7 +8,7 @@ Core Purpose of Classical Computers:
 * Enable large-scale systems (banks, airlines, internet, research, defense, healthcare)
 They turn human ideas into executable logic at massive speed.
 
-***1.How do we represent ‘how many’ using symbols, and why do different bases change the writing but not the quantity?”***
+***1. How do we represent ‘how many’ using symbols, and why do different bases change the writing but not the quantity?”***
 <details>
 <summary>Number Systems — Conceptual Refresher***</summary>
 
