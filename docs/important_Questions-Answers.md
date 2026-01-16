@@ -1,14 +1,18 @@
 # CLASSICAL COMPUTERS
 
-1. **Why is the computer considered one of the greatest human inventions? What problems did it solve?**  
-   Core Purpose of Classical Computers:
+1. **Why is the computer considered one of the greatest human inventions? What problems did it solve?**
+
+<details>
+<summary>Core Purpose of Classical Computers:</summary>
+   
    - Store large amounts of information
    - Process data quickly and accurately
    - Automate routine work
    - Enable large-scale systems (banks, airlines, internet, research, defense, healthcare)  
      They turn human ideas into executable logic at massive speed.
+</details>
 
-2. **How do we represent ‘how many’ using symbols, and why do different bases change the writing but not the quantity?**
+3. **How do we represent ‘how many’ using symbols, and why do different bases change the writing but not the quantity?**
 
 <details>
 <summary>Number Systems — Conceptual Refresher</summary>
