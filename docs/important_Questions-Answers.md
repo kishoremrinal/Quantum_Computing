@@ -61,7 +61,7 @@ Powers: 1,2,4,8…
 
 </details>
 
-3. **How does classical computers do the calculation?**
+3. **How does classical computers work or do the calculation? Explain how transistor, logic gates, semiconductor, motherboard etc makes everything possible in computers**
 
 # QUANTUM COMPUTERS
 
