@@ -151,37 +151,26 @@ CPU processes 64 bits at a time; Memory addresses can be very large; Programs ca
 <summary>Computing Is an Abstraction Over Physical Infrastructure:</summary>
 At the lowest level:
 
-There are electrons moving in semiconductors
-
-Transistors switch on/off
-
-Voltage flows through circuits
+* There are electrons moving in semiconductors
+* Transistors switch on/off
+* Voltage flows through circuits
 
 But you do not think in voltages. You think in:
 
-Numbers
-
-Variables
-
-Functions
-
-Files
-
-Apps
+* Numbers
+* Variables
+* Functions
+* Files
+* Apps
 
 So computing builds layers:
 
-Physics: electrons, silicon, voltage
-
-Hardware: transistors, gates, CPU, memory
-
-Machine code: 0s and 1s
-
-Assembly
-
-High-level languages (C, Python, Java)
-
-Apps and user interfaces
+3. Physics: electrons, silicon, voltage
+3. Hardware: transistors, gates, CPU, memory
+3. Machine code: 0s and 1s
+3. Assembly
+3. High-level languages (C, Python, Java)
+3. Apps and user interfaces
 
 Each layer hides the complexity below.
 
