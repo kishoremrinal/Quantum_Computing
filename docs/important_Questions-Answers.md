@@ -165,24 +165,22 @@ But you do not think in voltages. You think in:
 
 So computing builds layers:
 
-3. Physics: electrons, silicon, voltage
-3. Hardware: transistors, gates, CPU, memory
-3. Machine code: 0s and 1s
-3. Assembly
-3. High-level languages (C, Python, Java)
-3. Apps and user interfaces
+1. Physics: electrons, silicon, voltage
+1. Hardware: transistors, gates, CPU, memory
+1. Machine code: 0s and 1s
+1. Assembly
+1. High-level languages (C, Python, Java)
+1. Apps and user interfaces
 
 Each layer hides the complexity below.
 
-So the statement means:
+**So the statement means**:
 
 When you write code, you are not controlling electrons directly. You are using abstract concepts (numbers, logic, files) that sit on top of physical hardware that you never have to think about.
 
 In short:
-
-Physics does the real work
-
-Abstractions let humans use it without understanding the physics every time
+* Physics does the real work
+* Abstractions let humans use it without understanding the physics every time
 </details>
 
 # QUANTUM COMPUTERS
