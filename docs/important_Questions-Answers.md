@@ -129,13 +129,16 @@ When we say:
 
 16-bit, 32-bit, 64-bit → size of registers, data paths, and how much data the CPU handles at once.
 
-Meaning:
+**Meaning:**
 
-**Type**	     **What It Can Handle in One Step**
-8-bit	        Numbers up to 255 (2⁸−1)
-16-bit	     Up to 65,535
-32-bit	     Up to ~4.3 billion
-64-bit	     Extremely large (2⁶⁴−1)
+| **Type**     | **What It Can Handle in One Step**
+|--------------|------------------------------------|
+| 8-bit	      | Numbers up to 255 (2⁸−1)           |
+| 16-bit       | Up to 65,535                       |     
+| 32-bit	      | Up to ~4.3 billion                 |
+| 64-bit       | Extremely large (2⁶⁴−1)            | 
+
+
 
 So “64-bit” mainly means:
 CPU processes 64 bits at a time; Memory addresses can be very large; Programs can handle big data efficiently
