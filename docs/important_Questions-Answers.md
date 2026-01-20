@@ -71,29 +71,27 @@ Powers: 1,2,4,8…
 <summary>How Computers Do Calculations — Very Short Note</summary>
 
 
-Key Press to Signals
+1. **Key Press to Signals**
 Pressing 7 + 3 sends electrical signals from the keyboard to the computer, which are converted into binary (0s and 1s).
 
-Binary as Voltage
+2. **Binary as Voltage**
 Inside the motherboard and CPU:
 
 High voltage = 1
-
 Low voltage = 0
 
-Transistors (Semiconductors)
+3. **Transistors (Semiconductors)**
 The CPU is made of billions of transistors (tiny semiconductor switches).
 Each transistor is either:
 
 ON (conducting)
-
 OFF (not conducting)
 
-Logic Gates
+4. **Logic Gates**
 Transistors are combined to form logic gates: AND, OR, NOT, XOR.
 These gates process 0s and 1s using voltage.
 
-Adders
+5. **Adders**
 Logic gates form adder circuits.
 For 7 + 3:
 
@@ -102,13 +100,12 @@ For 7 + 3:
 ----
 1010
 
-
 Each bit addition is done by gates using transistor switching.
 
-Result to Screen
+6. **Result to Screen**
 Binary result goes to memory → converted to “10” → turned into pixels → displayed.
 
-In one line:
+**In one line**:
 Computers calculate by moving electricity through semiconductor transistors arranged as logic gates, which combine 0s and 1s into mathematical results.
 </details>
 
