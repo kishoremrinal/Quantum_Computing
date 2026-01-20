@@ -12,7 +12,7 @@
      They turn human ideas into executable logic at massive speed.
 </details>
 
-3. **How do we represent ‘how many’ using symbols, and why do different bases change the writing but not the quantity?**
+1. **How do we represent ‘how many’ using symbols, and why do different bases change the writing but not the quantity?**
 
 <details>
 <summary>Number Systems — Conceptual Refresher</summary>
@@ -65,7 +65,7 @@ Powers: 1,2,4,8…
 
 </details>
 
-3. **How does classical computers work or do the calculation? Explain how transistor, logic gates, semiconductor, motherboard etc makes everything possible in computers**
+1. **How does classical computers work or do the calculation? Explain how transistor, logic gates, semiconductor, motherboard etc makes everything possible in computers**
 
 <details>
 <summary>How Computers Do Calculations — Very Short Note</summary>
@@ -106,6 +106,41 @@ Binary result goes to memory → converted to “10” → turned into pixels �
 **In one line**:
 Computers calculate by moving electricity through semiconductor transistors arranged as logic gates, which combine 0s and 1s into mathematical results.
 </details>
+
+1. **What Are Bits, Really? What Does “8-bit” or “64-bit” Mean?**
+
+<details>
+<summary>What are Bits</summary>
+   A bit is the smallest unit of information:
+
+Physically: a voltage level in a circuit
+
+High voltage → 1
+
+Low voltage → 0
+
+Logically: a yes/no, on/off, true/false state.
+
+A group of bits forms a **word**.
+
+When we say:
+
+8-bit computer → its basic data unit is 8 bits
+
+16-bit, 32-bit, 64-bit → size of registers, data paths, and how much data the CPU handles at once.
+
+Meaning:
+
+**Type**	     **What It Can Handle in One Step**
+8-bit	        Numbers up to 255 (2⁸−1)
+16-bit	     Up to 65,535
+32-bit	     Up to ~4.3 billion
+64-bit	     Extremely large (2⁶⁴−1)
+
+So “64-bit” mainly means:
+CPU processes 64 bits at a time; Memory addresses can be very large; Programs can handle big data efficiently
+</details>
+   
 
 # QUANTUM COMPUTERS
 
