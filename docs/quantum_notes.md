@@ -70,7 +70,6 @@ Uses qubits (superposition, entanglement).
 Strength: solves certain problems exponentially faster.
 
 Used for: cryptography, chemistry, optimization, AI research.
-</details>
 
 **What Is Next-Generation Computing Likely to Look Like?**
 
@@ -80,3 +79,6 @@ Not one replacement—a hybrid future:
 * Quantum computers → special hard problems.
 * Neuromorphic chips → AI and perception.
 * Biological/chemical computing → niche scientific domains.
+</details>
+
+
