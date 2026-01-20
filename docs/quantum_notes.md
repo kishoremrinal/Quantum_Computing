@@ -37,7 +37,7 @@ A good computing device is one that:
   1. Chemical Computing
   1. Quantum COmputing
 
-1. Neuromorphic Computing
+**1. Neuromorphic Computing**
 
 Inspired by the human brain.
 
@@ -47,7 +47,7 @@ Strength: pattern recognition, learning, low power.
 
 Used for: AI, vision, speech, robotics.
 
-2. DNA-Based Computing
+**1. DNA-Based Computing**
 
 Uses DNA molecules to store and process information.
 
@@ -55,7 +55,7 @@ Strength: massive parallelism and data density.
 
 Used for: complex optimization, biological simulations.
 
-3. Chemical Computing
+**1. Chemical Computing**
 
 Uses chemical reactions to perform computation.
 
@@ -63,7 +63,7 @@ Logic emerges from reaction patterns.
 
 Used for: modeling biological or physical systems.
 
-4. Quantum Computing
+**1. Quantum Computing**
 
 Uses qubits (superposition, entanglement).
 
