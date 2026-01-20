@@ -77,15 +77,13 @@ Pressing 7 + 3 sends electrical signals from the keyboard to the computer, which
 2. **Binary as Voltage**
 Inside the motherboard and CPU:
 
-High voltage = 1
-Low voltage = 0
+High voltage = 1; Low voltage = 0
 
 3. **Transistors (Semiconductors)**
 The CPU is made of billions of transistors (tiny semiconductor switches).
 Each transistor is either:
 
-ON (conducting)
-OFF (not conducting)
+ON (conducting); OFF (not conducting)
 
 4. **Logic Gates**
 Transistors are combined to form logic gates: AND, OR, NOT, XOR.
