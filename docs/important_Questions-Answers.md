@@ -183,6 +183,24 @@ In short:
 * Abstractions let humans use it without understanding the physics every time
 </details>
 
+1. **what is Moore's law? Why is it weakening right now**
+
+<details>
+<summary>Moore’s Law says:</summary>
+
+The number of **transistors on a chip doubles** roughly every 18–24 months.
+
+It is:
+* Not a physical law
+* Not a mathematical theorem
+
+It is:
+* An observation made by Gordon Moore (Intel co-founder) in 1965
+* A trend that held true for decades
+* Now slowing down due to physical limits (heat, size of atoms, power use)
+</details>
+
+
 # QUANTUM COMPUTERS
 
 # PENDING Questions
