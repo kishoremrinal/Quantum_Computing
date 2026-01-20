@@ -143,7 +143,58 @@ When we say:
 So “64-bit” mainly means:
 CPU processes 64 bits at a time; Memory addresses can be very large; Programs can handle big data efficiently
 </details>
-   
+
+
+1. **Computing Is an Abstraction Over Physical Infrastructure**
+
+<details>
+<summary>Computing Is an Abstraction Over Physical Infrastructure:</summary>
+At the lowest level:
+
+There are electrons moving in semiconductors
+
+Transistors switch on/off
+
+Voltage flows through circuits
+
+But you do not think in voltages. You think in:
+
+Numbers
+
+Variables
+
+Functions
+
+Files
+
+Apps
+
+So computing builds layers:
+
+Physics: electrons, silicon, voltage
+
+Hardware: transistors, gates, CPU, memory
+
+Machine code: 0s and 1s
+
+Assembly
+
+High-level languages (C, Python, Java)
+
+Apps and user interfaces
+
+Each layer hides the complexity below.
+
+So the statement means:
+
+When you write code, you are not controlling electrons directly. You are using abstract concepts (numbers, logic, files) that sit on top of physical hardware that you never have to think about.
+
+In short:
+
+Physics does the real work
+
+Abstractions let humans use it without understanding the physics every time
+</details>
 
 # QUANTUM COMPUTERS
 
