@@ -200,6 +200,90 @@ It is:
 * Now slowing down due to physical limits (heat, size of atoms, power use)
 </details>
 
+1. **How circuits or logic gates does the calculation?**
+
+<details>
+<summary>How Circuits and Logic Gates Do Calculations:</summary>
+
+At the lowest level, a computer does not “add numbers.”
+It moves electricity through tiny switches (transistors).
+
+**Step 1: Transistors as Switches**
+
+A transistor is a semiconductor switch:
+
+* ON = current flows = 1
+* OFF = no current = 0
+
+Millions of these switches are arranged in patterns.
+
+**Step 2: Logic Gates**
+
+By wiring transistors together, we get logic gates:
+
+* AND: output is 1 only if both inputs are 1
+* OR: output is 1 if any input is 1
+* NOT: flips 1 to 0, 0 to 1
+* XOR: 1 if inputs are different
+These gates take 0s and 1s and produce new 0s and 1s.
+
+**Step 3: Making an Adder from Gates**
+
+To add two binary digits, we use a circuit called a full adder.
+Inputs:
+* A (bit 1)
+* B (bit 2)
+* Carry-in
+
+Outputs:
+
+* Sum
+* Carry-out
+
+Built from:
+
+* XOR, AND, OR gates
+
+Example: Add 1 + 1
+
+1 XOR 1 = 0   → Sum
+1 AND 1 = 1   → Carry
+
+So:
+1 + 1 = 10 (binary)
+
+**Step 4: Multi-bit Addition**
+
+To add numbers like 7 + 3:
+
+7 = 111
+3 = 011
+
+
+Add bit by bit from right to left:
+
+* Right: 1 + 1 = 0, carry 1
+* Middle: 1 + 1 + carry = 1, carry 1
+* Left: 1 + 0 + carry = 0, carry 1
+
+Result:
+
+1010  (which is 10)
+
+Each step is done by chained full adders made of logic gates.
+
+**What Is Really Happening Physically**
+
+* Voltages move through wires
+* Transistors open or close
+* Gates transform voltages into new voltages
+* Patterns of voltages represent numbers
+* The final pattern is the answer
+
+**In One Line**
+
+Logic gates calculate by using transistor switches to transform patterns of voltage (0s and 1s) according to fixed electrical rules that implement math.
+</details>
 
 # QUANTUM COMPUTERS
 
