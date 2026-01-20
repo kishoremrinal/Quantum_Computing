@@ -47,7 +47,7 @@ Strength: pattern recognition, learning, low power.
 
 Used for: AI, vision, speech, robotics.
 
-**1. DNA-Based Computing**
+**2. DNA-Based Computing**
 
 Uses DNA molecules to store and process information.
 
@@ -55,7 +55,7 @@ Strength: massive parallelism and data density.
 
 Used for: complex optimization, biological simulations.
 
-**1. Chemical Computing**
+**3. Chemical Computing**
 
 Uses chemical reactions to perform computation.
 
@@ -63,7 +63,7 @@ Logic emerges from reaction patterns.
 
 Used for: modeling biological or physical systems.
 
-**1. Quantum Computing**
+**4. Quantum Computing**
 
 Uses qubits (superposition, entanglement).
 
