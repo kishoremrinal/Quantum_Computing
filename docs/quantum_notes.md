@@ -37,7 +37,7 @@ A good computing device is one that:
   1. Chemical Computing
   1. Quantum COmputing
 
-  1. Neuromorphic Computing
+1. Neuromorphic Computing
 
 Inspired by the human brain.
 
