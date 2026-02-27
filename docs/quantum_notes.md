@@ -83,7 +83,7 @@ Not one replacement—a hybrid future:
 
 1. **Double-Slit Experiment**
 <details>
-<summary>What does it say and proves:</summary>
+<summary>DOUBLE SLIT EXPERIMENT. What does it say:</summary>
 
 
 # 📌 Final Unified Summary 
