@@ -81,4 +81,7 @@ Not one replacement—a hybrid future:
 * Biological/chemical computing → niche scientific domains.
 </details>
 
-
+1. **Double-Slit Experiment**
+<details>
+<summary>What does it say and proves:</summary>
+</details>
