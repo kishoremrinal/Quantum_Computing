@@ -81,9 +81,9 @@ Not one replacement—a hybrid future:
 * Biological/chemical computing → niche scientific domains.
 </details>
 
-1. **Double-Slit Experiment**
+1. **Double-Slit Experiment & Stern-Gerlach Experiment**
 <details>
-<summary>DOUBLE SLIT EXPERIMENT. What does it say:</summary>
+<summary>DOUBLE SLIT EXPERIMENT & Stern-Gerlach Experiment:</summary>
 <div>
 
 
