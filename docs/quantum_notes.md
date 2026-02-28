@@ -330,7 +330,7 @@ and not human observation.
 
 
 1. **Stern-Gerlach Experiment**
-<p style="color:red; font-weight:bold;">TOP OF DROPDOWN</p>
+
 <details>
 <summary>Stern-Gerlach Experiment:</summary>
 <div>
