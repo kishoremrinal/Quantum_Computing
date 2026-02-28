@@ -326,7 +326,8 @@ and not human observation.
 
 </details>
 
-1. **Stern-Gerlach Experiment**
+
+3. **Stern-Gerlach Experiment**
 
 <details>
 <summary>Stern-Gerlach Experiment:</summary>
@@ -437,7 +438,5 @@ Detector →
 # ✔ Final One-Sentence Summary
 
 **The Stern–Gerlach experiment proved that atomic spin is intrinsically quantum and can take only discrete values (up or down), revealed by how a non-uniform magnetic field pushes the two spin states in opposite directions.**
-
-
 
 </details>
