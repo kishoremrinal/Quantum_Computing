@@ -84,6 +84,7 @@ Not one replacement—a hybrid future:
 1. **Double-Slit Experiment**
 <details>
 <summary>DOUBLE SLIT EXPERIMENT. What does it say:</summary>
+<div>
 
 
 # 📌 Final Unified Summary 
@@ -324,6 +325,7 @@ and not human observation.
 - The double-slit experiment reveals **superposition** and **coherence**, not entanglement.  
 - “Observation” is not about humans — it is about whether **physical information exists in the environment**.
 
+</div>
 </details>
 
 
@@ -331,6 +333,7 @@ and not human observation.
 
 <details>
 <summary>Stern-Gerlach Experiment:</summary>
+<div>
 
 ⭐ Stern–Gerlach Experiment — Clean Refresher Summary
 
@@ -438,5 +441,5 @@ Detector →
 # ✔ Final One-Sentence Summary
 
 **The Stern–Gerlach experiment proved that atomic spin is intrinsically quantum and can take only discrete values (up or down), revealed by how a non-uniform magnetic field pushes the two spin states in opposite directions.**
-
+</div>
 </details>
