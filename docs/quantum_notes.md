@@ -327,3 +327,119 @@ and not human observation.
 
 
 </details>
+
+1. **What is computing? what are the various approaches of computing and what next generation computing may look like**
+
+<details>
+<summary>Computing & Different approaches of computing:</summary>
+
+# ⭐ Stern–Gerlach Experiment — Clean Refresher Summary
+
+The **Stern–Gerlach experiment (1922)** was designed to test how the **magnetic moment** of an atom behaves.  
+Physicists originally believed something classical and intuitive—but the experiment proved something fully quantum and surprising.
+
+---
+
+## 1. What they expected (classical idea — wrong)
+
+Before quantum mechanics matured, people assumed:
+
+- Atoms act like tiny spinning magnets.
+- The “spin direction” of this magnet could point in **any angle** in 3D space.
+- If passed through a non-uniform magnetic field (stronger above, weaker below), each atom should deflect **by a slightly different amount**, depending on its orientation.
+
+**Classical prediction:**  
+A **continuous smear** on the detector screen.
+
+---
+
+## 2. What they did (the actual setup)
+
+1. Heat silver atoms → they form a beam.  
+2. Shoot this beam through a **non-uniform magnetic field**:
+   - The field points upward (z direction).
+   - It gets **stronger as you go up**, weaker lower down.  
+   - This gradient creates a force depending on the atom’s magnetic moment.
+
+3. Let the beam hit a detector plate.
+
+The key physics:
+
+\[
+F_z = \mu_z \frac{dB_z}{dz}
+\]
+
+This is a force from the **magnetic field gradient**, not classical N–S pole attraction.
+
+---
+
+## 3. What actually happened (the quantum result)
+
+Instead of a smear, the beam split into **exactly two distinct spots**:
+
+
+ •
+ •
+
+
+This meant:
+
+- The magnetic moment of an electron **doesn't point in any direction**.  
+- It has **only two allowed orientations** relative to the magnetic field.
+
+For a spin–½ particle:
+
+\[
+S_z = +\frac{\hbar}{2} \quad \text{or} \quad -\frac{\hbar}{2}
+\]
+
+No values in between.
+
+This revealed **quantized spin**.
+
+---
+
+## 4. What the experiment proved
+
+The Stern–Gerlach experiment demonstrated:
+
+### ✓ Spin is quantized  
+Discrete outcomes: spin-up or spin-down.
+
+### ✓ Measurement forces a choice  
+Measuring the z-spin collapses the state into one of the two allowed values.
+
+### ✓ A non-uniform magnetic field reveals the spin  
+Because the magnetic field is stronger upward and weaker downward:
+- Spin-up → deflects upward  
+- Spin-down → deflects downward
+
+### ✓ The result shows superposition  
+Before hitting the magnets, atoms are **not** already in up or down.  
+They are in a **superposition**, and the magnet separates these components physically.
+
+---
+
+## 5. The essence in one picture
+Silver atom beam →
+[ non-uniform magnet ]
+↑ stronger B
+↓ weaker B
+
+           spin-up deflects ↑
+           spin-down deflects ↓
+
+Detector →
+•
+•
+
+
+---
+
+# ✔ Final One-Sentence Summary
+
+**The Stern–Gerlach experiment proved that atomic spin is intrinsically quantum and can take only discrete values (up or down), revealed by how a non-uniform magnetic field pushes the two spin states in opposite directions.**
+
+
+
+</details>
