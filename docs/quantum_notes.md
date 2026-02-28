@@ -442,4 +442,5 @@ Detector →
 
 **The Stern–Gerlach experiment proved that atomic spin is intrinsically quantum and can take only discrete values (up or down), revealed by how a non-uniform magnetic field pushes the two spin states in opposite directions.**
 </div>
+
 </details>
