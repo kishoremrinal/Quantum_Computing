@@ -328,10 +328,11 @@ and not human observation.
 
 
 1. **Stern-Gerlach Experiment**
+
 <details>
 <summary>Stern-Gerlach Experiment:</summary>
 
-# ⭐ Stern–Gerlach Experiment — Clean Refresher Summary
+⭐ Stern–Gerlach Experiment — Clean Refresher Summary
 
 The **Stern–Gerlach experiment (1922)** was designed to test how the **magnetic moment** of an atom behaves.  
 Physicists originally believed something classical and intuitive—but the experiment proved something fully quantum and surprising.
