@@ -324,14 +324,12 @@ and not human observation.
 - The double-slit experiment reveals **superposition** and **coherence**, not entanglement.  
 - “Observation” is not about humans — it is about whether **physical information exists in the environment**.
 
-
-
 </details>
 
-1. **What is computing? what are the various approaches of computing and what next generation computing may look like**
+1. **Stern-Gerlach Experiment**
 
 <details>
-<summary>Computing & Different approaches of computing:</summary>
+<summary>Stern-Gerlach Experiment:</summary>
 
 # ⭐ Stern–Gerlach Experiment — Clean Refresher Summary
 
