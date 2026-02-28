@@ -327,8 +327,7 @@ and not human observation.
 </details>
 
 
-3. **Stern-Gerlach Experiment**
-
+1. **Stern-Gerlach Experiment**
 <details>
 <summary>Stern-Gerlach Experiment:</summary>
 
