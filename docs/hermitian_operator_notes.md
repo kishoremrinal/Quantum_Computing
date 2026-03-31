@@ -6,25 +6,13 @@
 
 A **Hermitian operator** is:
 
-```text
-A special type of matrix used to represent MEASUREMENT in quantum mechanics
-```
+A special type of matrix used to represent **measurement in quantum mechanics**.
 
 ---
 
 ## 🎯 Why do we need it?
 
-Because when we measure any physical quantity (like spin, energy, etc.):
-
-```text
-The result must always be a REAL number
-```
-
-Not:
-- complex numbers  
-- imaginary values  
-
-👉 So quantum mechanics uses **Hermitian operators** to ensure this.
+Because when we measure any physical quantity (like spin, energy, etc.), the result must always be a **real number**.
 
 ---
 
@@ -32,67 +20,47 @@ Not:
 
 An operator \( A \) is Hermitian if:
 
-\[
+$$
 A^\dagger = A
-\]
+$$
 
 ---
 
-## 🧠 What is \( A^\dagger \) ?
+## 🧠 What is \( A^\dagger \)?
 
 It means:
-
-```text
 1. Take transpose (rows ↔ columns)
 2. Take complex conjugate (i → -i)
-```
 
 ---
 
 ## 🔍 Example
 
-\[
+$$
 A =
 \begin{bmatrix}
 2 & i \\
 -i & 3
 \end{bmatrix}
-\]
+$$
 
-- Transpose → swap rows/columns  
-- Conjugate → \(i → -i\)
+Then:
 
-Result:
-
-\[
+$$
 A^\dagger = A
-\]
+$$
 
 ✅ So this is Hermitian
 
 ---
 
-# 🧠 3. Key Meaning of Hermitian Condition
-
-\[
-A^\dagger = A
-\]
-
-means:
-
-```text
-The operator is structured in a way that guarantees real measurement outcomes
-```
-
----
-
-# 📘 4. Measurement in Quantum Mechanics
+# 📘 3. Measurement in Quantum Mechanics
 
 When measuring a state \( |\psi\rangle \):
 
-\[
+$$
 \langle \psi | A | \psi \rangle
-\]
+$$
 
 This is called the **expectation value**.
 
@@ -102,228 +70,151 @@ This is called the **expectation value**.
 
 If \( A \) is Hermitian:
 
-```text
-⟨ψ|A|ψ⟩ is ALWAYS real
-```
+$$
+\langle \psi | A | \psi \rangle \in \mathbb{R}
+$$
 
-👉 This is why Hermitian operators represent measurements.
+👉 Always real
 
 ---
 
-# 📘 5. Eigenvalues & Eigenvectors
+# 📘 4. Eigenvalues & Eigenvectors
 
 ---
 
 ## Equation
 
-\[
+$$
 A|\psi\rangle = \lambda |\psi\rangle
-\]
+$$
 
 ---
 
 ## Meaning
 
-- \( |\psi\rangle \) → eigenvector (special state)  
-- \( \lambda \) → eigenvalue (measurement result)  
+- \( |\psi\rangle \) → eigenvector  
+- \( \lambda \) → eigenvalue (measurement result)
 
 ---
 
-## 🔥 Key Properties (VERY IMPORTANT)
+## 🔥 Key Properties
 
-For Hermitian operators:
-
-```text
-1. Eigenvalues are REAL
-2. Eigenvectors are orthogonal
-```
+1. Eigenvalues are REAL  
+2. Eigenvectors are orthogonal  
 
 ---
 
-## 🧠 Intuition
+# 📘 5. Why Eigenvalues are REAL (Core Insight)
 
-```text
-Eigenvector = state where measurement gives definite answer
-Eigenvalue = that answer
-```
+We use:
 
----
-
-# 📘 6. Why Eigenvalues are REAL (Core Insight)
-
----
-
-We use this expression:
-
-\[
+$$
 \langle \psi | A | \psi \rangle
-\]
+$$
 
 For Hermitian \( A \):
 
-\[
-\langle \psi | A | \psi \rangle = (\langle \psi | A | \psi \rangle)^*
-\]
+$$
+\langle \psi | A | \psi \rangle = \left(\langle \psi | A | \psi \rangle\right)^*
+$$
 
 ---
 
-## 🧠 What does this mean?
+## 🧠 Meaning
 
-```text
-The value equals its own complex conjugate
-```
-
----
-
-## 🔥 Key Logic
-
-For a complex number:
-
-\[
-z = a + ib
-\quad \Rightarrow \quad z^* = a - ib
-\]
+A number equal to its complex conjugate must be **real**.
 
 If:
 
-\[
-z = z^*
-\]
+$$
+z = a + ib
+$$
 
 Then:
 
-```text
-Imaginary part must be zero
-```
+$$
+z^* = a - ib
+$$
 
-👉 So:
+If:
 
-```text
-z is REAL
-```
+$$
+z = z^*
+$$
 
----
+Then:
 
-## ✅ Conclusion
+$$
+b = 0
+$$
 
-```text
-Since ⟨ψ|A|ψ⟩ is real → eigenvalues must be real
-```
-
----
-
-# 📘 7. Why Eigenvectors are Orthogonal
+👉 So \( z \) is real.
 
 ---
+
+# 📘 6. Why Eigenvectors are Orthogonal
 
 If two eigenvalues are different:
 
-```text
-Their corresponding eigenvectors must not overlap
-```
+$$
+\langle \psi_1 | \psi_2 \rangle = 0
+$$
 
 ---
 
-## Meaning
+## 🧠 Meaning
 
-```text
-⟨ψ₁ | ψ₂⟩ = 0
-```
+Different measurement outcomes correspond to independent directions.
 
 ---
 
-## 🧠 Intuition
+# 📘 7. Example (Z Operator)
 
-```text
-Different measurement outcomes → completely distinct states
-```
-
----
-
-# 📘 8. Simple Example (Z Operator)
-
----
-
-\[
+$$
 Z =
 \begin{bmatrix}
 1 & 0 \\
 0 & -1
 \end{bmatrix}
-\]
+$$
 
 ---
 
-## Apply to states
+## Apply
 
-\[
+$$
 Z|0\rangle = +1 |0\rangle
-\]
+$$
 
-\[
+$$
 Z|1\rangle = -1 |1\rangle
-\]
+$$
 
 ---
 
-## Interpretation
+## Superposition
 
-```text
-|0⟩ → measurement gives +1
-|1⟩ → measurement gives -1
-```
+$$
+|\psi\rangle = \frac{1}{\sqrt{2}} (|0\rangle + |1\rangle)
+$$
 
----
+Measurement:
 
-## If state is superposition
-
-\[
-|\psi\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)
-\]
-
-Then:
-
-```text
-+1 with 50%
--1 with 50%
-```
+$$
+P(+1) = \frac{1}{2}, \quad P(-1) = \frac{1}{2}
+$$
 
 ---
 
-# 📘 9. Final Mental Model
+# 📘 8. Final Mental Model
+
+- Hermitian operator = measurement  
+- Eigenvalues = outcomes  
+- Eigenvectors = definite states  
+- Measurement = projection  
 
 ---
 
-```text
-Hermitian operator = measurement question
+# ⚡ Final Summary
 
-Eigenvalues = possible answers
-
-Eigenvectors = states with definite answers
-
-Measurement = projection of state onto these eigenvectors
-```
-
----
-
-# 🔗 10. Connection to Overall Quantum Flow
-
----
-
-```text
-1. Start with state |ψ⟩
-
-2. Apply unitary → evolve state
-
-3. Apply Hermitian → measure
-
-4. Outcomes = eigenvalues
-
-5. Probability = |⟨eigenvector | ψ⟩|²
-```
-
----
-
-# ⚡ Final One-Line Summary
-
-> **A Hermitian operator (A† = A) represents measurement in quantum mechanics, ensuring real outcomes, where eigenvalues are the possible results and eigenvectors are the states that give definite answers.**
+A Hermitian operator ensures all measurement outcomes are real, with eigenvalues as results and eigenvectors as definite states.
