@@ -92,8 +92,8 @@ $$
 
 ## Meaning
 
-- \( |\psi\rangle \) → eigenvector  
-- \( \lambda \) → eigenvalue (measurement result)
+- $|\psi\rangle$ → eigenvector  
+- $\lambda$ → eigenvalue (measurement result)
 
 ---
 
