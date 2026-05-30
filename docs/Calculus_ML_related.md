@@ -441,3 +441,251 @@ After understanding the concepts above, move to:
 7. Neural Networks
 
 These topics build directly on the intuition developed in this sheet.
+
+----------------------------------------------------------------------------------------------------
+
+Function
+    ↓
+Graph
+    ↓
+Slope
+    ↓
+Derivative
+    ↓
+Gradient
+    ↓
+Optimization
+    ↓
+Machine Learning
+
+# Why Graphs Matter in Calculus and ML
+
+## What is a Graph?
+
+A graph is a visual representation of the relationship between an input and an output.
+
+Example:
+
+```text
+Strength → Distance
+```
+
+| Strength | Distance |
+| -------- | -------- |
+| 1        | 2m       |
+| 2        | 4m       |
+| 3        | 6m       |
+| 4        | 8m       |
+
+Graph:
+
+```text
+Distance
+ ^
+ |
+8|       *
+6|     *
+4|   *
+2| *
+ |
+ +-----------------> Strength
+```
+
+---
+
+## Why Do We Need Graphs?
+
+Computers do not need graphs.
+
+Humans do.
+
+A graph helps us instantly see:
+
+* Whether values are increasing or decreasing
+* How fast they are changing
+* Whether there is a minimum or maximum
+* Whether the relationship is linear or nonlinear
+
+Without graphs, calculus formulas often feel abstract.
+
+---
+
+## What Does a Straight Line Mean?
+
+Example:
+
+```text
+y = mx + c
+```
+
+Where:
+
+* x = Input
+* y = Output
+* m = Slope
+* c = Starting value
+
+Graph:
+
+```text
+      /
+     /
+    /
+   /
+```
+
+Interpretation:
+
+```text
+Input increases
+      ↓
+Output increases at a constant rate
+```
+
+---
+
+## Why Is y = mx + c Important in ML?
+
+This is the foundation of Linear Regression.
+
+Example:
+
+```text
+Salary = (2 × Experience) + 5
+```
+
+Meaning:
+
+```text
+Every extra year of experience
+adds ₹2 lakh to salary.
+```
+
+The value `m` determines:
+
+```text
+How strongly input affects output.
+```
+
+---
+
+## How Graphs Connect to Derivatives
+
+A derivative is simply:
+
+```text
+Slope of the graph at a point.
+```
+
+Graph:
+
+```text
+      /
+     /
+    /
+   /
+```
+
+Steep graph:
+
+```text
+Derivative = Large
+```
+
+Flat graph:
+
+```text
+Derivative = Small
+```
+
+---
+
+## How Graphs Connect to Second Derivatives
+
+The second derivative describes the shape of the graph.
+
+### Positive Second Derivative
+
+```text
+   \__/
+```
+
+Meaning:
+
+```text
+Bowl Shape
+```
+
+This usually indicates a minimum.
+
+---
+
+### Negative Second Derivative
+
+```text
+   /\
+```
+
+Meaning:
+
+```text
+Upside-down Bowl
+```
+
+This usually indicates a maximum.
+
+---
+
+## How Graphs Connect to ML Training
+
+During training we often visualize:
+
+```text
+Loss vs Parameters
+```
+
+Graph:
+
+```text
+Loss
+ ^
+ |
+ |\
+ | \
+ |  \
+ |   \__
+ |
+ +------------>
+     Parameters
+```
+
+The bottom point is the minimum loss.
+
+This is where the model performs best.
+
+---
+
+## Most Important Graph in ML
+
+```text
+Loss
+ ^
+ |
+ |\
+ | \
+ |  \
+ |   \__
+ |
+ +------------>
+     Model Parameters
+```
+
+Everything in calculus is helping answer:
+
+1. Where am I on this graph?
+2. Which direction reduces loss?
+3. How steep is the graph?
+4. Have I reached the minimum?
+
+This graph is the visual intuition behind gradient descent, optimization, and neural network training.
+
