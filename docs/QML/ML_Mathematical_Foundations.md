@@ -490,18 +490,24 @@ The gradient points in the direction of steepest increase.
 
 ---
 
-# 20. Gradient Descent
+## 20. Gradient Descent
 
 Update rule:
 
 $$
-x^k
-=
-x^{k-1}
--
-\eta \nabla f(x^{k-1})
+x^k = x^{k-1} - \eta \nabla f(x^{k-1})
 $$
 
+Meaning:
+
+- $x^k$ = new estimate (current iteration)
+- $x^{k-1}$ = previous estimate
+- $\eta$ = learning rate (step size)
+- $\nabla f(x^{k-1})$ = gradient at the previous point
+
+Intuition:
+
+New Position = Current Position − Move Downhill
 Meaning:
 
 - xᵏ = new estimate
