@@ -354,7 +354,7 @@ The core objective of ML:
 
 ---
 
-# 14. Cost Function
+## 14. Cost Function
 
 $$
 J(\theta)
@@ -367,6 +367,8 @@ y^{(i)}
 h_\theta(x^{(i)})
 \right)^2
 $$
+
+This is Mean Squared Error (MSE).
 
 This is Mean Squared Error (MSE).
 
