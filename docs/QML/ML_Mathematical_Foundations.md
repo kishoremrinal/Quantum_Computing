@@ -357,6 +357,12 @@ The core objective of ML:
 ## 14. Cost Function
 
 $$
+J(\theta)=\frac{1}{2m}\sum_{i=1}^{m}\left(y^{(i)}-h_\theta(x^{(i)})\right)^2
+$$
+
+This is Mean Squared Error (MSE).
+------
+$$
 J(\theta)
 =
 \frac{1}{2m}
