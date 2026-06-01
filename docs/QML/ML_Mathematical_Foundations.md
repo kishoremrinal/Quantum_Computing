@@ -362,7 +362,9 @@ J(\theta)
 \frac{1}{2m}
 \sum_{i=1}^{m}
 \left(
-y^{(i)} - h_\theta(x^{(i)})
+y^{(i)}
+-
+h_\theta(x^{(i)})
 \right)^2
 $$
 
