@@ -689,17 +689,3 @@ Everything in calculus is helping answer:
 
 This graph is the visual intuition behind gradient descent, optimization, and neural network training.
 
-# Math Test
-
-$$
-x \in \mathbb{R}^n
-$$
-
-$$
-h_\theta(x)=\theta^T x
-$$
-
-$$
-J(\theta)=\frac{1}{2m}\sum_{i=1}^{m}(y^{(i)}-h_\theta(x^{(i)}))^2
-$$
-
