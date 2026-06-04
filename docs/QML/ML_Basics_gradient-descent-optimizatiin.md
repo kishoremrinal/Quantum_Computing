@@ -5,6 +5,8 @@
 These notes consolidate the concepts discussed in the class notes and explain the mathematical foundations behind Machine Learning (ML), Deep Learning (DL), and Quantum Machine Learning (QML).
 
 ---
+YOUTUBE VIDEO For easy explanation: https://www.youtube.com/watch?v=erfeZg27B7A
+
 
 # 1. What is Machine Learning?
 
