@@ -1,0 +1,138 @@
+%Copy this text in the MATLAB online
+clc; clear; close all;   % Clear workspace, command window, and close figures
+
+%% ==============================
+% USER SETTINGS
+% ==============================
+EVE_PRESENT = 1;         % 0 → No Eve, 1 → Intercept–Resend attack
+
+%% ==============================
+% PARAMETERS
+% ==============================
+N = 2e5;                % Total number of transmitted samples
+VA = 4;                 % Variance of Alice's Gaussian modulation
+T_actual = 0.7;         % Actual channel transmittance (loss factor)
+
+sigma0 = 1;             % Baseline system noise 
+
+% Thresholds for security decision
+xi_threshold = 0.15;    % Maximum allowed excess noise
+T_tolerance = 0.05;     % Allowed deviation in estimated transmittance
+
+%% ==============================
+% 1️⃣ Alice: Gaussian modulation
+% ==============================
+XA = sqrt(VA) * randn(1, N);   % Generate X quadrature samples (zero-mean Gaussian) N(0,V_A)
+PA = sqrt(VA) * randn(1, N);   % Generate P quadrature samples (independent Gaussian) N(0,V_A)
+
+%% ==============================
+% 2️⃣ Channel / Eve Model
+% ==============================
+
+if EVE_PRESENT
+    % ---- Eve intercepts the signal ----
+    n_ex = sqrt(sigma0)*randn(1, N);        % Measurement noise added by Eve (X)
+    n_ep = sqrt(sigma0)*randn(1, N);        % Measurement noise added by Eve (P)
+
+    XE = XA + n_ex;            % Eve measures X quadrature
+    PE = PA + n_ep;            % Eve measures P quadrature
+
+    % ---- Eve resends reconstructed signal ----
+    XR = XE;                   % Eve prepares new X signal
+    PR = PE;                   % Eve prepares new P signal
+
+    % ---- Channel from Eve to Bob ----
+    nx = sqrt(sigma0) * randn(1, N);   % Channel noise in X
+    np = sqrt(sigma0) * randn(1, N);   % Channel noise in P
+
+    XB = sqrt(T_actual) * XR + nx;     % Bob receives X after attenuation + noise
+    PB = sqrt(T_actual) * PR + np;     % Bob receives P after attenuation + noise
+
+else
+    % ---- Normal transmission (no Eve) ----
+    nx = sqrt(sigma0) * randn(1, N);   % Channel noise in X
+    np = sqrt(sigma0) * randn(1, N);   % Channel noise in P
+
+    XB = sqrt(T_actual) * XA + nx;     % Bob receives X directly from Alice
+    PB = sqrt(T_actual) * PA + np;     % Bob receives P directly from Alice
+end
+
+%% ==============================
+% 3️⃣ Subset selection for estimation
+% ==============================
+est_ratio = 0.2;                         % Fraction of samples used for estimation
+N_est = round(est_ratio * N);            % Number of samples used for estimation
+
+idx = randperm(N);                       % Random permutation of indices
+idx_est = idx(1:N_est);                  % Select subset for parameter estimation
+
+% Extract estimation samples 100, 20
+XA_est = XA(idx_est);
+PA_est = PA(idx_est);
+XB_est = XB(idx_est);
+PB_est = PB(idx_est);
+
+%% ==============================
+% 4️⃣ PARAMETER ESTIMATION
+% ==============================
+
+% ---- Variance estimation ----
+Var_XA = var(XA_est);    % Variance of Alice's X
+Var_PA = var(PA_est);    % Variance of Alice's P
+Var_XB = var(XB_est);    % Variance of Bob's X
+Var_PB = var(PB_est);    % Variance of Bob's P
+
+% ---- Covariance estimation ----
+% Since mean ≈ 0, Cov ≈ E[X_A * X_B]
+Cov_X = mean(XA_est .* XB_est);   % Covariance between Alice X and Bob X
+Cov_P = mean(PA_est .* PB_est);   % Covariance between Alice P and Bob P
+
+% ---- Transmittance estimation ----
+% T = (Cov / Var)^2
+T_est_X = (Cov_X / Var_XA)^2;     % Transmittance from X quadrature
+T_est_P = (Cov_P / Var_PA)^2;     % Transmittance from P quadrature
+
+T_est = (T_est_X + T_est_P) / 2;  % Average transmittance
+
+% ---- Noise estimation ----
+noise_X = Var_XB - T_est * Var_XA;   % Noise contribution in X
+noise_P = Var_PB - T_est * Var_PA;   % Noise contribution in P
+
+noise_total = (noise_X + noise_P)/2; % Average total noise
+
+% ---- Excess noise estimation ----
+xi_est = noise_total - sigma0;       % Extra noise beyond baseline
+
+%% ==============================
+% 5️⃣ SECURITY DECISION
+% ==============================
+
+
+
+fprintf('\n--- Estimated Parameters ---\n');
+fprintf('T_actual = %.3f | T_est = %.3f\n', T_actual, T_est);
+fprintf('xi_est   = %.3f\n', xi_est);
+
+% ---- Check transmittance consistency ----
+if abs(T_est - T_actual) > T_tolerance
+    fprintf('\n⚠️ ALERT: Transmittance mismatch!\n');
+end
+
+% ---- Check excess noise ----
+if xi_est > xi_threshold
+    fprintf('🚨 SECURITY WARNING: Excess noise too high → Possible Eve detected\n');
+    secure_flag = 0;    % Channel not secure
+else
+    fprintf('✅ Channel appears secure\n');
+    secure_flag = 1;    % Channel secure
+end
+
+%% ==============================
+% 6️⃣ FINAL DECISION
+% ==============================
+
+if secure_flag
+    fprintf('\n🔐 Final Decision: KEY CAN BE GENERATED\n');
+else
+    fprintf('\n❌ Final Decision: ABORT KEY GENERATION\n');
+end
