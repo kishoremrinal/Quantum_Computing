@@ -1,0 +1,8 @@
+download python first better to use 3.12
+then install the following packages using pip:
+qiskit 
+qiskit-ibm-runtime
+qiskit-aer
+numpy
+pylatexenc
+matplotlib
